@@ -30,6 +30,12 @@ app.use(function (err, req, res, next) {
   });
 });
 
+<<<<<<< HEAD
 app.listen(PORT,()=>{
+=======
+
+
+app.listen(8080,()=>{
+>>>>>>> 261f6aa6dfca469875dc4295cf2308dc8b34c93d
   console.log('Serving on 8080');
 });
