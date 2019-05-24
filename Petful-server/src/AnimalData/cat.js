@@ -62,3 +62,5 @@ const cat = [
   breed: 'Bengal',
   story: 'Thrown on the street'
 }]
+
+module.exports = cat
