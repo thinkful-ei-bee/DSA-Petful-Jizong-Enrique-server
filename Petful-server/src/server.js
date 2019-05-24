@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const { PORT } = require('./config')
+
 
 const app = express();
 app.use(cors());
@@ -11,6 +13,13 @@ app.use(function (req, res, next) {
   next(err);
 });
 
+
+app.get('/', (req, res) => {
+  res.send('Hello, world!')
+})
+
+
+
 // Catch-all Error handler
 // Add NODE_ENV check to prevent stacktrace leak
 app.use(function (err, req, res, next) {
@@ -21,6 +30,6 @@ app.use(function (err, req, res, next) {
   });
 });
 
-app.listen(8080,()=>{
+app.listen(PORT,()=>{
   console.log('Serving on 8080');
 });
