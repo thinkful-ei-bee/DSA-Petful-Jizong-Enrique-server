@@ -8,14 +8,13 @@ const catsQueue = require('../queues/cats-queue')
 catRouter
     .get('/', (req,res) =>{
         
-       let cat = catsQueue.first.data
+       let cat = catsQueue.peek()
         return res.status(200).json(cat)
     })
 
    
 
     .delete('/', (req,res)=>{
-      
 
          let cat = catsQueue.dequeue();// not working
           console.log(cat)

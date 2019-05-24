@@ -8,11 +8,11 @@ dogRouter
     .get('/', (req,res) =>{
 
 
-        let dog = dogsQueue.first.data
+        let dog = dogsQueue.peek()
         return res.status(200).json(dog)
     
     })
-    .get('/delete', (req,res)=>{
+    .delete('/', (req,res)=>{
       
       
       let dog = dogsQueue.dequeue(); // not working
