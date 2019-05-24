@@ -2,17 +2,26 @@ const express = require('express')
 const dogRouter= express.Router()
 const jsonBodyParser= express.json()
 const dogData= require('../AnimalData/dog')
-
+const dogsQueue=require('../queues/dogs-queue')
 
 dogRouter
     .get('/', (req,res) =>{
 
-        let dogs = dogData[0]
-        console.log(dogs)
-        // return res.status(200).json(dogs)
-        return res.status(200).send('dog endpoint')
+
+        let dog = dogsQueue.first.data
+        return res.status(200).json(dog)
     
     })
+    .delete('/', (req,res)=>{
+      
+      
+      let dog = dogsQueue.dequeue(); // not working
+      console.log(dog)
+    
+       
 
+       return res.status(202).json(dog)
+       
+   })
 
 module.exports= dogRouter
