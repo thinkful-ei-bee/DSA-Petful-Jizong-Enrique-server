@@ -2,6 +2,7 @@ const cors = require('cors');
 const express = require('express')
 const catRouter = require('./routes/cat-router')
 const dogRouter = require('./routes/dog-router')
+const pplRouter= require('./routes/ppl-router')
 
 const app = express()
 
@@ -23,7 +24,7 @@ app.use('/api/dogs', dogRouter)
 //   res.send('dogs endpoint')
 // })
 
-
+app.use('/api/people', pplRouter)
 
 
 
