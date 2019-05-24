@@ -30,7 +30,7 @@ class _Node {
         return;
       }
 
-      return node.value;
+      return this.first.data;
 
 
     }
@@ -47,7 +47,7 @@ class _Node {
         this.last = null;
       }
   
-      return node.value;
+      return node.data;
     }
   }
   

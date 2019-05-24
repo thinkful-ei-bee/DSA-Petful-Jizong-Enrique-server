@@ -12,11 +12,11 @@ dogRouter
         return res.status(200).json(dog)
     
     })
-    .delete('/', (req,res)=>{
+    .get('/delete', (req,res)=>{
       
       
       let dog = dogsQueue.dequeue(); // not working
-      console.log(dog)
+      console.log(dog,'test')
     
        
 
