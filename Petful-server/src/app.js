@@ -1,5 +1,7 @@
+require('dotenv').config()
 const cors = require('cors');
 const express = require('express')
+const {CLIENT_ORIGIN} = require('./config');
 const catRouter = require('./routes/cat-router')
 const dogRouter = require('./routes/dog-router')
 const pplRouter= require('./routes/ppl-router')
@@ -8,7 +10,10 @@ const app = express()
 
 
 
-app.use(cors());
+app.use(cors({
+  origin: CLIENT_ORIGIN
+}))
+
 
  
 app.use('/api/cats', catRouter)
