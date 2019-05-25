@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
+  "engines": {
+     "node": "11.12.0"
+    },
   "author": "Alex Cumbo",
   "license": "UNLICENSED",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "predeploy": "npm audit && npm run migrate-production",
+    "deploy": "git push heroku master"
   },
   "dependencies": {
     "cors": "^2.8.5",
