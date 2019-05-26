@@ -6,8 +6,9 @@ const pplQueue=require('../queues/ppl-queue')
 pplRouter
     .get('/', (req,res) =>{
 
-
+        
         let person = pplQueue.peek()
+        console.log(person,'test')
         return res.status(200).json(person)
     
     })

@@ -54,10 +54,10 @@ const cat = [
   story: 'abandoned'
 },
 {
-  imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
+  imageURL:'https://merchdope.com/wp-content/uploads/2019/03/cat-breeds.jpg', 
   imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-  name: 'Fluffy',
-  sex: 'Female',
+  name: 'Chief',
+  sex: 'Male',
   age: 2,
   breed: 'Bengal',
   story: 'Thrown on the street'

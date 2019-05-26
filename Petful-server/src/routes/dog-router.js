@@ -6,11 +6,8 @@ const dogsQueue=require('../queues/dogs-queue')
 
 dogRouter
     .get('/', (req,res) =>{
-
-
         let dog = dogsQueue.peek()
-        return res.status(200).json(dog)
-    
+        return res.status(200).json(dog)    
     })
     .delete('/', (req,res)=>{
       

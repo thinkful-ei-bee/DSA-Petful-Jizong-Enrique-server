@@ -8,7 +8,7 @@ const dog = [{
     story: 'Owner Passed away'
   },
   {
-    imageURL: 'https://www.pexels.com/photo/photographer-animal-photography-dog-58997/',
+    imageURL: 'https://media.familyminded.com/12/0d/120d87255f394161992eeaaccb3c376e.jpg',
     imageDescription: 'Adult Brown and White Pembroke Welsh Corgi Near the Body of Water',
     name: 'Cheddar',
     sex: 'Male',
@@ -60,15 +60,6 @@ const dog = [{
     age: 2,
     breed: 'Siberian Husky',
     story: 'Rejected by mother'
-  },
-  {
-     imageURL: 'https://images.pexels.com/photos/264206/pexels-photo-264206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    imageDescription: 'Long-coated Brown Poodle Wearing White Dress',
-    name: 'Leeloo',
-    sex: 'Female',
-    age: 5,
-    breed: 'Standard Poodle',
-    story: 'Stray found next to a dumpster'
   }
 ]
 
