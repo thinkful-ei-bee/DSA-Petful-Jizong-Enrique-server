@@ -18,7 +18,49 @@ const ppl = [
         name:'Aladdin'
     },
     {
-        name:'Bob'
+        name:'Farah'
+    },
+    {
+        name:'Eddie'
+    },
+    {
+        name:'John'
+    },
+    {
+        name:'Joey'
+    },
+    {
+        name:'James'
+    },
+    {
+        name:'Laurel'
+    },
+    {
+        name:'Michelle'
+    },
+    {
+        name:'Kevin'
+    },
+    {
+        name:'Marvin'
+    },
+    {
+        name:'Becky'
+    },
+    {
+        name:'Sarah'
+    },
+    {
+        name:'Daniel'
+    },
+    {
+        name:'Lisa'
+    },
+    {
+        name:'Dina'
+    },
+    {
+        name:'Bobby'
     },
 ]
 module.exports = ppl
