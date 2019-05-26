@@ -1,4 +1,4 @@
-const { PORT } = require('./config')
+const { PORT,CLIENT_ORIGIN  } = require('./config')
 const app = require('./app')
 const cors = require('cors')
 
