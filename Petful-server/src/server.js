@@ -1,11 +1,8 @@
 const { PORT } = require('./config')
 const app = require('./app')
+const cors = require('cors')
 
-
-
-app.get('/', (req, res) => {
-  res.send('Hello, world!')
-})
+app.use(cors({origin: CLIENT_ORIGIN}))
 
 
 
