@@ -20,14 +20,16 @@ Start nodemon for the application: npm run dev
 
     GET /dogs
             fetches the queue of dogs up for adoption
-
+     
+              
     GET /cats
             fetches the queue of cats up for adoption
-
+            
+               
     GET /people
             fetches the queue of people in line to adopt a pet
-
-
+            
+    
     DELETE /dogs
             dequeues the dog once they have been adopted
 
