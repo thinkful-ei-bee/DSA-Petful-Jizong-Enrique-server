@@ -2,6 +2,20 @@
 
 Contributors: Jizong Liang & Enrique Montemayor
 
+
+### Set up
+
+clone the repository: git clone https://github.com/thinkful-ei-bee/DSA-Petful-Jizong-Enrique-server.git
+
+install dependencies: npm install
+
+Start the application: npm start
+
+Start nodemon for the application: npm run dev
+
+
+
+
 ### API Documentation
 
     GET /dogs
