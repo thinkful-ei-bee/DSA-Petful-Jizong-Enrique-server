@@ -18,16 +18,9 @@ app.use(cors({
  
 app.use('/api/cats', catRouter)
 
-// app.get('/cats', (req,res) => {
-//   res.send('cats endpoint')
-// })
 
 app.use('/api/dogs', dogRouter)
 
-
-// app.get('/dogs', (req,res) => {
-//   res.send('dogs endpoint')
-// })
 
 app.use('/api/people', pplRouter)
 

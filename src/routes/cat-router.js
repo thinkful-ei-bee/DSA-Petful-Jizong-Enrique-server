@@ -16,7 +16,7 @@ catRouter
 
     .delete('/', (req,res)=>{
 
-         let cat = catsQueue.dequeue();// not working
+         let cat = catsQueue.dequeue();
           console.log(cat)
 
           return res.status(202).json(cat)

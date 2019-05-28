@@ -9,14 +9,11 @@ dogRouter
         let dog = dogsQueue.peek()
         return res.status(200).json(dog)    
     })
+
     .delete('/', (req,res)=>{
       
-      
-      let dog = dogsQueue.dequeue(); // not working
+      let dog = dogsQueue.dequeue(); 
       console.log(dog,'test')
-    
-       
-
        return res.status(202).json(dog)
        
    })
