@@ -36,7 +36,7 @@ class _Node {
     }
 
     dequeue() {
-      if (this.first === null) {
+      if (this.first === null || this.first === undefined) {
         return;
       }
   
