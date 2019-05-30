@@ -6,14 +6,18 @@ const dogsQueue=require('../queues/dogs-queue')
 
 dogRouter
     .get('/', (req,res) =>{
+        if(!dogsQueue.peek()){            
+            return 
+        }
         let dog = dogsQueue.peek()
         return res.status(200).json(dog)    
     })
 
-    .delete('/', (req,res)=>{
-      
-      let dog = dogsQueue.dequeue(); 
-      console.log(dog,'test')
+    .delete('/', (req,res)=>{    
+        if(!dogsQueue.peek()){            
+            return 
+        }    
+      let dog = dogsQueue.dequeue();       
        return res.status(202).json(dog)
        
    })

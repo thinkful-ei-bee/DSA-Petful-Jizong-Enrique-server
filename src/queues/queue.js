@@ -37,6 +37,7 @@ class _Node {
 
     dequeue() {
       if (this.first === null || this.first === undefined) {
+       console.log('delete test')
         return;
       }
   
@@ -45,8 +46,14 @@ class _Node {
   
       if (node === this.last) {
         this.last = null;
+        
+        return 
       }
-  
+      if(node.data===undefined){
+        
+        return null
+      }
+
       return node.data;
     }
   }
