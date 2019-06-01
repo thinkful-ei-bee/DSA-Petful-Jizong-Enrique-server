@@ -25,19 +25,15 @@ class _Node {
       this.last = node;
     }
     
-    peek(){
-      if (this.first === null) {
-        return;
+    peek(){            
+      if (this.first.next === undefined) {        
+        return 'queue is empty';
       }
-
       return this.first.data;
-
-
     }
 
-    dequeue() {
+    dequeue() {      
       if (this.first === null || this.first === undefined) {
-       console.log('delete test')
         return;
       }
   
@@ -45,15 +41,12 @@ class _Node {
       this.first = this.first.next;
   
       if (node === this.last) {
-        this.last = null;
-        
+        this.last = null;        
         return 
       }
-      if(node.data===undefined){
-        
+      if(node.data===undefined){        
         return null
       }
-
       return node.data;
     }
   }

@@ -14,16 +14,11 @@ catRouter
         return res.status(200).json(cat)
     })
 
-   
-
-    .delete('/', (req,res)=>{
-        console.log(catsQueue.peek())
-        if(catsQueue.peek()){            
-            
+    .delete('/', (req,res)=>{   
+        if(catsQueue.peek()){                        
             let cat = catsQueue.dequeue();                    
             return res.status(202).json(cat)      
-        }
-           
+        }           
     })
 
 
